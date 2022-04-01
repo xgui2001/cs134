@@ -1,0 +1,6 @@
+story.txt - encoded with a CaesarCipher, shifting by 15.
+reform.txt - text due to Mark Twain, obscured by Rot13.
+cia.txt - text from https://elonka.com/kryptos/, encoded with a Vigenere
+	  cipher with keyphrase 'SANBORN'
+turing.txt - parts from The Guardian, encoded with Enigma's scrambler,
+          using default rotors and reflector, with start key='TUR'
