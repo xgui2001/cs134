@@ -1,0 +1,8 @@
+These files support lab 5 - generation of text from a fingerprinted source.
+
+ Lab05.pdf -- lab handout
+ oracle.py -- module supporting the generation of text from n-gram distribution
+ PrideAndPrejudice.txt, LittleWomen.txt -- texts by Austen and Alcott
+ GradeSheet.txt -- grading items
+ honorcode.txt -- the honor code 
+ 
