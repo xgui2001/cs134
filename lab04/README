@@ -1,0 +1,21 @@
+In this folder are several programs that currently do not run correctly.
+In order of increasing debugging difficulty:
+  * prime.py - test if an integer argument to the program is prime
+  * shuffle.py - an implementation of rot13 encrpytion
+  * rot13.py - an implementation of rot13 encrpytion
+  * cribbage.py - scores cribbage hands
+Each of these programs is documented in the docstring.
+
+Each of these programs has several types of errors:
+  1. Syntax errors.  Errors that keep the script from running correctly.
+  2. Runtime errors.  Errors that occur when a computation experiences an error
+     while running.
+  3. Logic errors.  Errors that happen because the implementation of the
+     algorithm is logically flawed.
+
+Some of these scripts make use of code in tools.py, a file of code
+that is correctly implemented and is not the source of errors.  In addition,
+code marked "# WORKS" should be considered functional.
+
+All code we have written included docstring-based tests that represent
+expectations about how the program runs, but other tests may also be useful.
