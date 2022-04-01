@@ -1,0 +1,21 @@
+from wordTools import *
+
+words('words/disease')
+def rotate(s,n=13):
+    """Take the letters of the string s and rotate them n positions in
+    the alphabet.
+    >>> rotate( 'HAL', n=1)
+    'IBM'
+    """
+    result = ''
+    for c in s:
+        if c in lowers:
+            idx = lowers.index(c)
+            idx = (idx + n)%26
+            c = lowers[idx]
+        elif c in uppers:
+            idx = uppers.index(c)
+            idx = (idx + n)%26
+            c = uppers[idx]
+        result += c
+    return result

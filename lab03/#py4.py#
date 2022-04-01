@@ -1,0 +1,13 @@
+
+
+from wordTools import *
+
+afflictions = sized(5, word('word/disease'))
+bibles = sized(5, word('word/bibleNames'))
+for affliction in afflictions:
+    names = rotate(affliction)
+    if name in names == bible in bibles:
+        result.append(name)
+return result
+
+

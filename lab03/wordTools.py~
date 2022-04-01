@@ -1,0 +1,70 @@
+# Replace this line with a one-line description of this module.
+
+# This publicly documents the module:
+"""
+Put documentation for the module in this document string.
+This documentation is visible with
+    pydoc3 wordTools
+"""
+
+# __all__ is a list of names of objects imported with
+#   from wordTools import *
+# make sure you update this variable as you add useful methods!
+__all__ = [ "canon", "isIsogram" ]
+
+# All functions go below here.
+def words(filename):
+    """Opens and reads words found in a file named with the string filename,
+    returns the resulting list.
+
+    >>> words('words/dict')[161131]
+    'python'
+    >>> words('words/bodyParts')[124]
+    'skeleton'
+    """
+    results = []
+    with open(filename) as wordFile:
+        for line in wordFile:
+            # add code here to process line
+            # and add it to results
+            pass # does nothing, but loops need something inside
+    return results
+
+def canon(word):
+    """Returns a canonical version of word:
+       * lower case letters
+       * in alphabetical order
+       * no spaces
+
+    >>> canon('Mia')
+    'aim'
+    >>> canon('iAm')
+    'aim'
+    >>> canon('a lot')
+    'alot'
+    """
+    # how would you remove spaces from "a lot\n"?
+    result = word.lower()
+    result = ''.join(sorted(result))
+    return result
+
+def isIsogram(word):
+    """Returns true if the letters of the word are unique.
+
+    >>> isIsogram('Unique')
+    False
+    >>> isIsogram('python')
+    True
+    """
+    # Extra credit problem 5: rewrite this method to use only
+    # a single for loop and no sets.
+    result = len(set(word.lower())) == len(word)
+    return result
+
+if __name__ == '__main__':
+    # The following code is executed when you run wordTools as a script:
+
+    # Tests will fail in this starter code.
+    # As your work progresses, this module will pass more tests.
+    from doctest import testmod
+    testmod()  # test this module, according to the doctests
