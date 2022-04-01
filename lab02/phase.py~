@@ -1,0 +1,44 @@
+"""
+Replace this text to document what this script provides.
+"""
+# These items will get imported with "from phase import *":
+__all__ = [ "moonAge", "age2Str" ]
+
+def moonAge(month, day, year):
+    """Compute the age of the moon based on a month, day, and year.
+       N.B. Order of parameters is important.
+    """
+    rsum = month + day + 30
+    if year >= 2000:
+            rsum-= 8
+    else:
+            rsum-= 4
+    yy = year % 100
+    dist = yy % 19
+    if dist < 10:
+            dist
+    else:
+            dist = dist - 19)
+    if dist >= 0:
+        dist = (dist%3)*10 + dist
+    elif dist < 0:
+        dist = -(abs(dist)%3)*10 - abs(dist)
+    return (dist + rsum) % 30
+
+
+def age2Str(age):  # extra credit
+    """Convert a moon age to a textual description."""
+    # currently: returns str version of an int
+    return str(age)
+    
+def main():
+    """A method that prompts for a date and prints the moon's age."""
+    month = int(input("Month? "))
+    day = int(input("Day? "))
+    year = int(input("Year (yyyy)? "))
+    age = moonAge(month,day,year)
+    print("On {}/{}/{}, the moon's age is {}.".format(month, day, year, age))
+
+if __name__ == "__main__":
+    # The following code is executed when we execute this file as a script:
+    main()
