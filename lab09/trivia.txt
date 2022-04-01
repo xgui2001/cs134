@@ -1,0 +1,27 @@
+Write to the following file the answers to the trivia questions
+computed by your code.  You should have a function in trivia.py that
+prints the same answer so the one written to this file.
+
+Please write Python routines that help to answer the following questions.
+Each routine should be named q1(db), q2(db), etc. in trivia.py, where db is
+the result returned by faculty.readDB(). The routine should print out
+information the that will help you accurately determine the answer.
+
+The faculty.csv database will be considered authoritative for the purpose of
+this lab.
+
+Questions:
+
+1. How many members are on the faculty at Williams?
+
+2. Who has two Bachelor's degrees from two different universities?
+
+3. What is the name and department of the faculty member with the longest title?
+
+4. Who has the largest gap between their latest Bachelor's Degree and Ph.D.? How long is it?
+
+5. Which department has the most faculty?
+
+6. Which four types of Master's Degrees are only held by one faculty member at Williams?
+
+7. What is the most popular undergraduate institution?
